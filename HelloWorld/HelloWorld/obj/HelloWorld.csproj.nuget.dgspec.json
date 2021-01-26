@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
+    "H:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "D:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+    "H:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "H:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "D:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "H:\\C-Sharp 494\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "D:\\C-Sharp 494\\HelloWorld\\HelloWorld\\obj\\",
+        "outputPath": "H:\\C-Sharp 494\\HelloWorld\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
