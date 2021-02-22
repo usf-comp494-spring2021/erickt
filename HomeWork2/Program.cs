@@ -2,7 +2,7 @@
 Title:        C# 494 - Homework 2
 Author:		  Erick Tenorio
 Course:		  COMP 494
-Due Date:	  february 15, 2021
+Due Date:	  February 15, 2021
 Environment:  Visual C#
 
 Objective:  Create a console .NET Core application that takes an array
