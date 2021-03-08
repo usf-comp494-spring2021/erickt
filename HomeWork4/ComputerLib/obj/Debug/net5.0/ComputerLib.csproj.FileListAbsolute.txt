@@ -1,0 +1,11 @@
+D:\C-Sharp 494\HomeWork4\ComputerLib\bin\Debug\net5.0\ComputerLib.deps.json
+D:\C-Sharp 494\HomeWork4\ComputerLib\bin\Debug\net5.0\ComputerLib.dll
+D:\C-Sharp 494\HomeWork4\ComputerLib\bin\Debug\net5.0\ref\ComputerLib.dll
+D:\C-Sharp 494\HomeWork4\ComputerLib\bin\Debug\net5.0\ComputerLib.pdb
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.AssemblyInfoInputs.cache
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.AssemblyInfo.cs
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.csproj.CoreCompileInputs.cache
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.dll
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ref\ComputerLib.dll
+D:\C-Sharp 494\HomeWork4\ComputerLib\obj\Debug\net5.0\ComputerLib.pdb
