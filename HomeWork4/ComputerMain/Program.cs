@@ -30,9 +30,9 @@ namespace ComputerMain
             // and test console output
             var comp = new Computer();
             comp.manufacture = "Dell";
-            comp.model = "Inspirion";
-            comp.purposeCode = "All-in-One Desktop";
-            comp.CPUCode = "i5 10th Generation";
+            comp.model = "Inspirion 3880";
+            comp.purposeCode = "Home Desktop";
+            comp.CPUCode = "i5-10400 10th Generation";
             comp.RAMSlotCount = 2;
             comp.WriteToConsole();
 
@@ -41,8 +41,8 @@ namespace ComputerMain
             var laptop = new LaptopComputer();
             laptop.manufacture = "ASUS";
             laptop.model = "VivoBook S15 S532";
-            laptop.purposeCode = "Visuals That Inspire";
-            laptop.CPUCode = "i7 8th Generation";
+            laptop.purposeCode = "High Performance Laptop";
+            laptop.CPUCode = "i7-8565U 8th Generation";
             laptop.RAMSlotCount = 2;
             laptop.screenSize = 15.6;
             laptop.hasDiscDrive = false;

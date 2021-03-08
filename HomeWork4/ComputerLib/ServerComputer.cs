@@ -5,11 +5,11 @@ Course:		  COMP 494
 Due Date:	  March 8, 2021
 Environment:  Visual C#
 
-Objective:  Create a class library of a Server Computer class, derived
-            by the Computer class. The class inherits data field members
-            from the Computer class. The Server Computer class has data
+Objective:  Create the class library of the ServerComputer class, derived
+            from the Computer class. The class inherits field members
+            from the Computer class. The ServerComputer class has
             field members of CPUCount and HasIPMI. Create a new
-            WriteToConsole method for the Server Computer class.
+            WriteToConsole method for the ServerComputer class.
 ***********************************************************************/
 
 using System;
@@ -39,6 +39,28 @@ namespace ComputerLib
             RAMSlotCount = 0;
             CPUCount = 0;
             hasIPMI = false;
+        }
+
+        /// <summary>
+        /// Parameterized constructor of the ServerComputer class, accepts user input.
+        /// </summary>
+        /// <param name="inputManufacture">User input of the manufacture data field.</param>
+        /// <param name="inputModel">User input of the model data field.</param>
+        /// <param name="inputPurposeCode">User input of the purposeCode field.</param>
+        /// <param name="inputCPUCode">User input of the CPUCode field.</param>
+        /// <param name="inputRAMSlotCount">User input of the RAMSlotCount field.</param>
+        /// <param name="inputCPUCount">User input of the CPUCount field.</param>
+        /// <param name="inputHasIPMI">User input of the hasIPMI field.</param>
+        public ServerComputer(string inputManufacture, string inputModel, string inputPurposeCode, string inputCPUCode,
+            int inputRAMSlotCount, int inputCPUCount, bool inputHasIPMI)
+        {
+            manufacture = inputManufacture;
+            model = inputModel;
+            purposeCode = inputPurposeCode;
+            CPUCode = inputCPUCode;
+            RAMSlotCount = inputRAMSlotCount;
+            CPUCount = inputCPUCount;
+            hasIPMI = inputHasIPMI;
         }
 
         /// <summary>
