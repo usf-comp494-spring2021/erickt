@@ -1,0 +1,12 @@
+H:\C-Sharp 494\Midterm\CalculatorLib\bin\Debug\net5.0\CalculatorLib.deps.json
+H:\C-Sharp 494\Midterm\CalculatorLib\bin\Debug\net5.0\CalculatorLib.dll
+H:\C-Sharp 494\Midterm\CalculatorLib\bin\Debug\net5.0\ref\CalculatorLib.dll
+H:\C-Sharp 494\Midterm\CalculatorLib\bin\Debug\net5.0\CalculatorLib.pdb
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csprojAssemblyReference.cache
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.GeneratedMSBuildEditorConfig.editorconfig
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.AssemblyInfoInputs.cache
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.AssemblyInfo.cs
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csproj.CoreCompileInputs.cache
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.dll
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\ref\CalculatorLib.dll
+H:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.pdb

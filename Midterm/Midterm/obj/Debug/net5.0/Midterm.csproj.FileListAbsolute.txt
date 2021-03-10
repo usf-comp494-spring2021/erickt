@@ -1,0 +1,16 @@
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.exe
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.deps.json
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.runtimeconfig.json
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.runtimeconfig.dev.json
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.dll
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\ref\Midterm.dll
+H:\C-Sharp 494\Midterm\Midterm\bin\Debug\net5.0\Midterm.pdb
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.csprojAssemblyReference.cache
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.GeneratedMSBuildEditorConfig.editorconfig
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.AssemblyInfoInputs.cache
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.AssemblyInfo.cs
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.csproj.CoreCompileInputs.cache
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.dll
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\ref\Midterm.dll
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.pdb
+H:\C-Sharp 494\Midterm\Midterm\obj\Debug\net5.0\Midterm.genruntimeconfig.cache
