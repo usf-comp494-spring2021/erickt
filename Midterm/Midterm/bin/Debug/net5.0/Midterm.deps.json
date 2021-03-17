@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Midterm/1.0.0": {
+        "dependencies": {
+          "CalculatorLib": "1.0.0"
+        },
         "runtime": {
           "Midterm.dll": {}
+        }
+      },
+      "CalculatorLib/1.0.0": {
+        "runtime": {
+          "CalculatorLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Midterm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculatorLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -92,17 +92,22 @@ namespace CalculatorLib
         /// <returns>The median of the set of numbers.</returns>
         public double Median(double[] a)
         {
+            // Copy array elements to new array so
+            // passed array does not get modified
+            double[] b = new double[a.Length];
+            Array.Copy(a, b, a.Length);
+
             // Sort the array and get the remainder
-            Array.Sort(a);
-            int remainder = a.Length % 2;
+            Array.Sort(b);
+            int remainder = b.Length % 2;
             double median;
 
             // There is an odd number of elements in
             // the array, get the index of the median
             if (remainder == 1)
             {
-                int medianIndex = a.Length / 2;
-                median = a[medianIndex];
+                int medianIndex = b.Length / 2;
+                median = b[medianIndex];
             }
 
             // There is an even number of elements in
@@ -110,10 +115,10 @@ namespace CalculatorLib
             // median numbers for one median value
             else
             {
-                int medianIndex1 = a.Length / 2;
+                int medianIndex1 = b.Length / 2;
                 int medianIndex2 = medianIndex1 - 1;
 
-                median = a[medianIndex1] + a[medianIndex2];
+                median = b[medianIndex1] + b[medianIndex2];
                 median /= 2;
             }
 

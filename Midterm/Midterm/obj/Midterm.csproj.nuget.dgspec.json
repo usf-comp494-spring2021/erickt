@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "H:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj": {}
+    "F:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj": {}
   },
   "projects": {
-    "H:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj": {
+    "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj",
-        "projectName": "Midterm",
-        "projectPath": "H:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj",
+        "projectUniqueName": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
+        "projectName": "CalculatorLib",
+        "projectPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "H:\\C-Sharp 494\\Midterm\\Midterm\\obj\\",
+        "outputPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +59,70 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj",
+        "projectName": "Midterm",
+        "projectPath": "F:\\C-Sharp 494\\Midterm\\Midterm\\Midterm.csproj",
+        "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
+        "outputPath": "F:\\C-Sharp 494\\Midterm\\Midterm\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
+                "projectPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
