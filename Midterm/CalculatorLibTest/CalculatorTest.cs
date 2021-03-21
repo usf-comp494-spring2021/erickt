@@ -109,12 +109,12 @@ namespace CalculatorLibTest
         public void TestMeanFor5Numbers()
         {
             // Arrange values
-            double[] a = { 2, 3, 9, 12, 20 };
+            double[] numbers = { 2, 3, 9, 12, 20 };
             double expected = 9.2;
             var calc = new Calculator();
 
             // Act
-            double actual = calc.Mean(a);
+            double actual = calc.Mean(numbers, numbers.Length);
 
             // Assert values
             Assert.Equal(expected, actual);
@@ -127,15 +127,15 @@ namespace CalculatorLibTest
         /// to test that Sort works in the Median method.
         /// </summary>
         [Fact]
-        public void TestMedianForOddNumberOfElements()
+        public void TestMedianOddArraySize()
         {
             // Arrange values; 11 is the median value
-            double[] a = { 12, 8, 15, 11, 3 };
+            double[] numbers = { 12, 8, 15, 11, 3 };
             double expected = 11;
             var calc = new Calculator();
 
             // Act
-            double actual = calc.Median(a);
+            double actual = calc.Median(numbers, numbers.Length);
 
             // Assert values
             Assert.Equal(expected, actual);
@@ -148,15 +148,15 @@ namespace CalculatorLibTest
         /// to test that Sort works in the Median method.
         /// </summary>
         [Fact]
-        public void TestMedianForEvenNumberOfElements()
+        public void TestMedianEvenArraySize()
         {
             // Arrange values; 14 and 17 are median values
-            double[] a = { 20, 14, 5, 1, 22, 17 };
+            double[] numbers = { 20, 14, 5, 1, 22, 17 };
             double expected = 15.5;
             var calc = new Calculator();
 
             // Act
-            double actual = calc.Median(a);
+            double actual = calc.Median(numbers, numbers.Length);
 
             // Assert values
             Assert.Equal(expected, actual);

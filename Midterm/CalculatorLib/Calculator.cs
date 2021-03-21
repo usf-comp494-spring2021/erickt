@@ -68,57 +68,45 @@ namespace CalculatorLib
         /// <summary>
         /// To find the mean (average) value of a set of numbers.
         /// </summary>
-        /// <param name="a">Array of numbers.</param>
+        /// <param name="numbers">Array of numbers.</param>
+        /// <param name="count">Number of elements in array.</param>
         /// <returns>The mean of the set of numbers.</returns>
-        public double Mean(double[] a)
+        public double Mean(double[] numbers, int count)
         {
-            // Final the total value of all numbers
-            // in the set
-            double total = 0;
+            // Find the sum of all numbers in the array
+            double sum = 0;
 
-            for (int i = 0; i < a.Length; i++)
-                total += a[i];
+            for (int i = 0; i < count; i++)
+                sum += numbers[i];
 
-            // Get mean of the array of numbers
-            double mean = total / a.Length;
-
-            return mean;
+            // Return average of the sum
+            return (sum / count);
         }
 
         /// <summary>
         /// To find the median (middle) value in a array.
         /// </summary>
-        /// <param name="a">Array of numbers.</param>
+        /// <param name="numbers">Array of numbers.</param>
+        /// /// <param name="count">Number of elements in array.</param>
         /// <returns>The median of the set of numbers.</returns>
-        public double Median(double[] a)
+        public double Median(double[] numbers, int count)
         {
             // Copy array elements to new array so
-            // passed array does not get modified
-            double[] b = new double[a.Length];
-            Array.Copy(a, b, a.Length);
-
-            // Sort the array and get the remainder
-            Array.Sort(b);
-            int remainder = b.Length % 2;
+            // passed array does not get modified.
+            // Sort the numbers in ascending order
             double median;
+            double[] numbersCopy = new double[count];
+            Array.Copy(numbers, numbersCopy, count);
+            Array.Sort(numbersCopy);
 
-            // There is an odd number of elements in
-            // the array, get the index of the median
-            if (remainder == 1)
-            {
-                int medianIndex = b.Length / 2;
-                median = b[medianIndex];
-            }
+            // Odd number of elements in the array
+            if (numbersCopy.Length % 2 == 1)
+                median = numbersCopy[count / 2];
 
-            // There is an even number of elements in
-            // the array, add and then divide the two
-            // median numbers for one median value
+            // Even number of elements in the array
             else
             {
-                int medianIndex1 = b.Length / 2;
-                int medianIndex2 = medianIndex1 - 1;
-
-                median = b[medianIndex1] + b[medianIndex2];
+                median = numbersCopy[count / 2] + numbersCopy[(count / 2) - 1];
                 median /= 2;
             }
 

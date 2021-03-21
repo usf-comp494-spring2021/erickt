@@ -19,12 +19,11 @@ Objective:  Enhance the Calculator class to include two new methods,
 ***********************************************************************/
 
 using CalculatorLib;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using static System.Console;
-using static System.IO.Directory;
 using static System.IO.Path;
-using static System.Environment;
 
 namespace Midterm
 {
@@ -39,7 +38,7 @@ namespace Midterm
         static void Main(string[] args)
         {
             // Get current directory and display path to user
-            string dir = GetCurrentDirectory();
+            string dir = Directory.GetCurrentDirectory();
             WriteLine($"The current directory is: {dir}");
 
             // Get the input file name and check if it exists.
@@ -47,9 +46,9 @@ namespace Midterm
             WriteLine("Does CalcInput.txt exist in current directory?:");
             WriteLine(File.Exists(Combine(dir, inputFile)));
 
-            // File does not exist, end program
+            // File does not exist, program ends after this selection
             if (!File.Exists(inputFile))
-                WriteLine($"{inputFile} not found, terminating program.");
+                WriteLine($"{inputFile} not found, nothing to do.");
 
             // File exists, continue on with program
             else
@@ -60,22 +59,48 @@ namespace Midterm
                 List<double> listOfNumbers = new List<double>();
                 StreamReader textReader = File.OpenText(inputFile);
 
-                // Read from the input file. Parse to double data type
+                // Read from the input file and parse to double data type
                 while (!textReader.EndOfStream)
                     listOfNumbers.Add(double.Parse(textReader.ReadLine()));
+                textReader.Close();
 
                 // Display the numbers read in a single line
-                WriteLine("All numbers from file read, writing to console.");
+                WriteLine($"All numbers from file read, displaying {listOfNumbers.Count} numbers:");
                 listOfNumbers.ForEach(number => Write($"{number} "));
-                WriteLine(NewLine);
+                WriteLine(Environment.NewLine);
 
                 // Initialize double array and add all list numbers to array
                 double[] arrayOfNumbers = listOfNumbers.ToArray();
-                WriteLine("Array of numbers successfully created, writing to console.");
+                WriteLine("Copied list of numbers to an array.");
 
-                for (int i = 0; i < arrayOfNumbers.Length; i++)
-                    Write($"{arrayOfNumbers[i]} ");
+                // Calculate the mean and median of array, then display them
+                var calc = new Calculator();
+                double mean = calc.Mean(arrayOfNumbers, arrayOfNumbers.Length);
+                double median = calc.Median(arrayOfNumbers, arrayOfNumbers.Length);
+
+                WriteLine("Calculated mean and median of the set of numbers:");
+                WriteLine($"Mean: {Math.Round(mean, 2)}");
+                WriteLine($"Median: {Math.Round(median, 2)}\n");
+
+                // Create a StreamWriter instance and output file
+                string outputFile = "CalcOutput.txt";
+                StreamWriter textWriter = File.CreateText(Combine(dir, outputFile));
+
+                // Write all numbers and their mean and median to the output file
+                textWriter.WriteLine($"Set of {arrayOfNumbers.Length} Numbers:");
+                textWriter.WriteLine("----------------------------------------");
+
+                foreach (double number in arrayOfNumbers)
+                    textWriter.Write($"{number} ");
+                textWriter.WriteLine(Environment.NewLine);
+
+                textWriter.WriteLine($"Mean of Set: {Math.Round(mean, 2)}");
+                textWriter.WriteLine($"Median of Set: {Math.Round(median, 2)}");
+                textWriter.Close();
+
+                // Indicate end of program to the user in the console
+                WriteLine($"{outputFile} has been successfully written in:\n{dir}.");
             }
-        }
-    }
+        } // End of Main
+    } // End of Program
 }
