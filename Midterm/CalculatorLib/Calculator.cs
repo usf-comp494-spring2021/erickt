@@ -91,8 +91,8 @@ namespace CalculatorLib
         /// <returns>The median of the set of numbers.</returns>
         public double Median(double[] numbers, int count)
         {
-            // Copy array elements to new array so
-            // passed array does not get modified.
+            // Copy array elements to new array so passed array
+            // does not get modified if necessary by the user.
             // Sort the numbers in ascending order
             double median;
             double[] numbersCopy = new double[count];

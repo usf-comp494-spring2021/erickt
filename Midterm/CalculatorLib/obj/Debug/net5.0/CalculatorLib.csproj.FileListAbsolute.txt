@@ -33,4 +33,3 @@ F:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csproj.CoreC
 F:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.dll
 F:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\ref\CalculatorLib.dll
 F:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.pdb
-F:\C-Sharp 494\Midterm\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csprojAssemblyReference.cache

@@ -69,9 +69,10 @@ namespace Midterm
                 listOfNumbers.ForEach(number => Write($"{number} "));
                 WriteLine(Environment.NewLine);
 
-                // Initialize double array and add all list numbers to array
+                // Initialize double array, add numbers to array and sort it
                 double[] arrayOfNumbers = listOfNumbers.ToArray();
-                WriteLine("Copied list of numbers to an array.");
+                WriteLine("Copied list of numbers to an array, sorting numbers.");
+                Array.Sort(arrayOfNumbers);
 
                 // Calculate the mean and median of array, then display them
                 var calc = new Calculator();
@@ -87,15 +88,15 @@ namespace Midterm
                 StreamWriter textWriter = File.CreateText(Combine(dir, outputFile));
 
                 // Write all numbers and their mean and median to the output file
-                textWriter.WriteLine($"Set of {arrayOfNumbers.Length} Numbers:");
+                textWriter.WriteLine($"Sorted set of {arrayOfNumbers.Length} numbers:");
                 textWriter.WriteLine("----------------------------------------");
 
                 foreach (double number in arrayOfNumbers)
                     textWriter.Write($"{number} ");
                 textWriter.WriteLine(Environment.NewLine);
 
-                textWriter.WriteLine($"Mean of Set: {Math.Round(mean, 2)}");
-                textWriter.WriteLine($"Median of Set: {Math.Round(median, 2)}");
+                textWriter.WriteLine($"Mean of set: {Math.Round(mean, 2)}");
+                textWriter.WriteLine($"Median of set: {Math.Round(median, 2)}");
                 textWriter.Close();
 
                 // Indicate end of program to the user in the console
