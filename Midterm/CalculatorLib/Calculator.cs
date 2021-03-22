@@ -100,7 +100,7 @@ namespace CalculatorLib
             Array.Sort(numbersCopy);
 
             // Odd number of elements in the array
-            if (numbersCopy.Length % 2 == 1)
+            if (count % 2 == 1)
                 median = numbersCopy[count / 2];
 
             // Even number of elements in the array

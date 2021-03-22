@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj": {}
+    "D:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj": {}
   },
   "projects": {
-    "F:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj": {
+    "D:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj",
+        "projectUniqueName": "D:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj",
         "projectName": "CalculatorLibTest",
-        "projectPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj",
+        "projectPath": "D:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\CalculatorLibTest.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\obj\\",
+        "outputPath": "D:\\C-Sharp 494\\Midterm\\CalculatorLibTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
-                "projectPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj"
+              "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
+                "projectPath": "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj"
               }
             }
           }
@@ -85,26 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
+    "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
+        "projectUniqueName": "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
         "projectName": "CalculatorLib",
-        "projectPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
+        "projectPath": "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\CalculatorLib.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "F:\\C-Sharp 494\\Midterm\\CalculatorLib\\obj\\",
+        "outputPath": "D:\\C-Sharp 494\\Midterm\\CalculatorLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
