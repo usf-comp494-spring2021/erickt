@@ -87,7 +87,7 @@ namespace CalculatorLib
         /// To find the median (middle) value in a array.
         /// </summary>
         /// <param name="numbers">Array of numbers.</param>
-        /// /// <param name="count">Number of elements in array.</param>
+        /// <param name="count">Number of elements in array.</param>
         /// <returns>The median of the set of numbers.</returns>
         public double Median(double[] numbers, int count)
         {
