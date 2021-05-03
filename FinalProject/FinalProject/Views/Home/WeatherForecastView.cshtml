@@ -1,0 +1,40 @@
+﻿@*This page is to show the the variables available from the general
+    WeatherForecast live API. Set the page in a readable format.*@
+
+@model WeatherForecastWeb.Models.WeatherForecastModel
+@{
+    ViewData["Title"] = "Weather Forecast";
+}
+
+@*At top of the page, show today's date and location as large text.*@
+<div>
+    <h1>Your Daily Weather Forecast</h1>
+    <strong>@Model.location</strong> <br />
+    <strong>@Model.forecastDate</strong> <br />
+
+    <img src="@Url.Content("~/images/joliet.png")" style="width:500px; height:400px">
+    <p>Welcome to the Joliet Weather Report home page! You can see the current and upcoming
+        weather of Joliet right here. Below is the general weather forecast, though you can
+        take a look at the detailed and hourly forecasts as well.</p>
+</div>
+
+@* Display general weather forecast info in the form of a description list *@
+<hr />
+<div>
+    <dl class="dl-horizontal">
+        <dt>Temperature: </dt>
+        <dd>@Model.temperature Fahrenheit</dd>
+        <dt>Feels Like: </dt>
+        <dd>@Model.feelsLike Fahrenheit</dd>
+        <dt>Descriptor: </dt>
+        <dd>@Model.descriptor</dd>
+        <dt>Wind Speed: </dt>
+        <dd>@Model.windSpeed mph</dd>
+        <dt>Wind Direction: </dt>
+        <dd>@Model.windDirection</dd>
+        <dt>Pressure: </dt>
+        <dd>@Model.pressure kPa</dd>
+    </dl>
+
+    <img src="~/images/@Model.imagePath" alt="@Model.imagePath" style="width:400px; height:300px">
+</div>

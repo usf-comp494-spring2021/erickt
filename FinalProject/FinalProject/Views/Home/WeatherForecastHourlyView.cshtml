@@ -1,0 +1,74 @@
+﻿@*This page is to show the the variables available from the
+    HourlyForecast live API. Set the page in a readable format.*@
+
+@model IEnumerable<WeatherForecastHourlyModel>
+@{
+    ViewData["Title"] = "Hourly Weather Forecast";
+}
+
+@*At top of the page, display the header text and image of Joliet.*@
+<h1>Your Hourly Weather Forecast</h1>
+<img src="@Url.Content("~/images/joliet3.png")" style="width:500px; height:400px"> <br />
+<strong>Joliet, Illinois, USA</strong>
+
+@*Use variable to count number of columns in each row so a new row can be made*@
+@{
+    var colCount = 0;
+}
+
+@*Display different hours of the day using foreach. Split the
+    hours into rows and columns, use a counter to determine
+    when a new row is needed to fit onto the screen.*@
+@{ foreach (var item in Model)
+    {
+        if (colCount == 0)
+        {
+            @:<div class="row">
+        }
+
+            <div class="col-md-auto">
+                <strong>@item.forecastDate</strong>
+
+                @* Display hourly weather forecast info in the form of a description list.
+                    Display the hour of the following weather forecast details.*@
+                <dl class="dl-horizontal">
+                    <dt>Temperature: </dt>
+                    <dd>@item.temperature Fahrenheit</dd>
+                    <dt>Feels Like: </dt>
+                    <dd>@item.feelsLike Fahrenheit</dd>
+                    <dt>Descriptor: </dt>
+                    <dd>@item.descriptor</dd>
+                    <dt>Wind Speed</dt>
+                    <dd>@item.windSpeed mph</dd>
+                    <dt>Wind Direction</dt>
+                    <dd>@item.windDirection</dd>
+                    <dt>Pressure: </dt>
+                    <dd>@item.pressure kPa</dd>
+                    <dt>Precipitation Percent: </dt>
+                    <dd>@item.precipitationPercent%</dd>
+                    <dt>Precipitation Amount: </dt>
+                    <dd>@item.precipitationAmount inches</dd>
+                    <dt>Cloud Cover: </dt>
+                    <dd>@item.cloudCover%</dd>
+                    <dt>Dew Point: </dt>
+                    <dd>@item.dewPoint Fahrenheit</dd>
+                    <dt>Humidity: </dt>
+                    <dd>@item.humidity%</dd>
+                </dl>
+                <img src="~/images/@item.imagePath" alt="@item.imagePath" style="width:300px; height:200px">
+            </div>
+
+        @*New row after three columns*@
+        if (colCount == 2)
+        {
+            colCount = 0;
+            @:</div>
+        }
+        
+        @*Less than three columns in row, increment counter*@
+        else
+        {
+            colCount++;
+        }
+    }
+}
